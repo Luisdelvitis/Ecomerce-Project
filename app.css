@@ -1,0 +1,278 @@
+html { 
+    box-sizing: border-box;
+    font-size: 62.5%; /** 1 rem = 10pi**/
+
+}
+
+*,*::before, ::after {
+    box-sizing: inherit;
+}   
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+/** Globais **/
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    margin: 0 0 5rem 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+    padding-top: 5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.btn {
+    background-color: #8cbc00;
+    display: block;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color .3s ease-out;
+ }
+
+ .btn:hover {
+    background-color: #769c02;
+
+}
+
+/** Utilidades **/
+
+.text-align{
+    text-align: center;
+}  
+
+/** Header e Navegação **/
+
+h1 {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+h1 span { 
+     color: #037bc0;
+}
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+}  
+
+.barra-linha{
+    border-top: .1rem solid rgb(177, 177, 177);
+
+}    
+.Navegacao-menu { 
+     
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hero {
+    background-image: url(Imagens/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 55rem;
+}    
+
+/** Categorias **/
+
+.categorias a{
+    text-align: center;
+    display: block;
+    padding: 2rem;
+    font-size: 2rem;
+
+}
+
+.categorias a:hover{
+    background-color: #037bc0;
+    color: #ffffff;
+    border-bottom-right-radius: 1rem;
+
+}
+
+.lista-categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding-bottom: 6rem;
+}
+
+/** Bloco Sobre Nosostros **/
+
+.sobre {
+    background-image: linear-gradient( to right, transparent 50%, #037bc0 50%, #037bc0 100%), url(Imagens/nosotros.jpg);
+    padding: 10rem 0;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100%, 120rem;
+}
+
+.sobrenosfle {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tetsobrenos {
+   flex-basis: 50%;
+   padding-left: 10rem;
+   color: #ffffff;
+}
+
+/** Lista dos Produtos **/
+
+.conteudo-principal  {
+    padding-top: 3rem;
+    
+ }
+
+ .lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+ }
+
+ .produtos:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+ }
+
+ .produtos:nth-child(1) img {
+    height: 43rem;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+ .produtos:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+ }
+
+ .produtos:nth-child(2) img, .produtos:nth-child(3) img {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+ .produtos:nth-child(3) {
+    grid-column-start: 4;
+    grid-column-end: 7;
+ }
+
+ .produtos:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+ }
+
+ .produtos:nth-child(5) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+ }
+
+ .produtos:nth-child(6) {
+    grid-column-start: 5;
+    grid-column-end: 7;
+ }
+
+ .produtos {
+    background-color: #037bc0;
+ }
+
+ .info-produto {
+    text-align: center;
+    padding: 2rem;
+    color: #ffffff;
+ }
+
+ .info-produto h3 {
+    margin: 0;
+ }
+
+ .info-produto p {
+    margin: 0 0 .5rem 0;  
+ }
+
+ .info-produto .preco {
+    font-size: 2.8rem;
+    font-weight: 900;
+ }
+
+/** Footer **/
+
+.footer {
+    border-top: .1rem #afafaf solid;
+    margin-top: 5rem;
+    padding: 5rem;
+ }
+
+ .footer h3 {
+    margin-bottom: .5rem;
+ }
+
+ .grid-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+ }
+
+ .nav-footer a{
+    display: block;
+ }
+
+ .copyright {
+    margin-top: 5rem;
+    text-align: center;
+ }
+
+/** sobre nos **/
+
+.conteudo-sobrenos {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr ) );
+    column-gap: 4rem;
+ }
+
+ .info-sobrenos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+
